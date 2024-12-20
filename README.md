@@ -24,12 +24,14 @@ VitalAI is an innovative open-source health and wellness platform that combines 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/mintahandrews/VitalAI.git
    cd VitalAI
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -37,12 +39,15 @@ VitalAI is an innovative open-source health and wellness platform that combines 
    ```
 
 3. Set up environment variables:
+
    ```bash
    cp .env.example .env
    ```
+
    Update the `.env` file with your Supabase credentials.
 
 4. Start the development server:
+
    ```bash
    npm run dev
    # or
@@ -93,8 +98,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Authors
 
-- **Andrews Mintah** - *Initial work* - [mintahandrews](https://github.com/mintahandrews)
-  - Software Engineer
+- **Andrews Mintah** - _Initial work_ - [mintahandrews](https://github.com/mintahandrews)
+  - Software Developer
   - Health & Wellness Enthusiast
   - Open Source Contributor
 
