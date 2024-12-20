@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Calendar customization */
+.react-calendar {
+  @apply w-full max-w-full bg-white border-0 font-sans;
+}
+
+.react-calendar__tile {
+  @apply max-w-full py-3 px-2 bg-transparent text-center leading-none;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  @apply bg-indigo-50 rounded-lg;
+}
+
+.react-calendar__tile--active {
+  @apply bg-indigo-600 rounded-lg text-white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  @apply bg-indigo-700;
+}
+
+.react-calendar__navigation button {
+  @apply min-w-[44px] bg-transparent text-base mt-2;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  @apply bg-indigo-50 rounded-lg;
+}
+
+.react-calendar__month-view__weekdays {
+  @apply text-center uppercase font-bold text-xs;
+}
+
+/* Card and container styles */
+.card {
+  @apply bg-white rounded-lg shadow-sm p-4 sm:p-6;
+}
+
+.container-xl {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.container-lg {
+  @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.container-md {
+  @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Grid layouts */
+.grid-responsive {
+  @apply grid gap-4 sm:gap-6;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+/* Form elements */
+.input-primary {
+  @apply w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.button-primary {
+  @apply bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors
+    disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.button-secondary {
+  @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors;
+}
+
+/* Typography */
+.heading-lg {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.heading-md {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.text-body {
+  @apply text-base text-gray-600;
+}
+
+.text-small {
+  @apply text-sm text-gray-500;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="15" fill="#4F46E5" />
+  
+  <!-- Heart Shape -->
+  <path d="M16 24C16 24 8 19 8 13C8 10.2386 10.2386 8 13 8C14.5 8 15.8365 8.67431 16.7279 9.70417C16.8494 9.84711 17.1506 9.84711 17.2721 9.70417C18.1635 8.67431 19.5 8 21 8C23.7614 8 26 10.2386 26 13C26 19 18 24 16 24Z" fill="white"/>
+  
+  <!-- Pulse Line -->
+  <path d="M8 16H12L14 13L16 19L18 16H24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
